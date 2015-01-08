@@ -35,7 +35,16 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp',
+    'accounts',
+    'attendees',
+    'conference',
+    'events',
+    'lightningtalks',
+    'proposals',
+    'reviews',
+    'schedule',
+    'speakers',
+    'sponsorship',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,8 +69,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': 'django',
+        'USER': 'django',
+        'PASSWORD': 'django',
     }
 }
 
