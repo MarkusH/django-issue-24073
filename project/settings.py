@@ -29,22 +29,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'accounts',
-    'attendees',
-    'conference',
-    'events',
-    'lightningtalks',
-    'proposals',
-    'reviews',
-    'schedule',
-    'speakers',
-    'sponsorship',
+    # 'django.contrib.admin',
+    # 'django.contrib.auth',
+    # 'django.contrib.contenttypes',
+    # 'django.contrib.sessions',
+    # 'django.contrib.messages',
+    # 'django.contrib.staticfiles',
+    'app_a',
+    'app_b',
+    'app_c',
 )
 
 MIDDLEWARE_CLASSES = (
