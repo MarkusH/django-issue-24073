@@ -29,15 +29,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
-    # 'django.contrib.admin',
-    # 'django.contrib.auth',
-    # 'django.contrib.contenttypes',
-    # 'django.contrib.sessions',
-    # 'django.contrib.messages',
-    # 'django.contrib.staticfiles',
-    'app_a',
-    'app_b',
-    'app_c',
+    'django.contrib.contenttypes',
+    'app_tags',
+    'taggit',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -64,7 +58,8 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': 'django',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django',
         'USER': 'django',
         'PASSWORD': 'django',
     }
