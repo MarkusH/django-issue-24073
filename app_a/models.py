@@ -1,17 +1,17 @@
 from django.db import models
 
 
-class A1(models.Model):
+class A(models.Model):
     pass
 
 
-class A2(models.Model):
+class B(models.Model):
     pass
 
 
-class A3(models.Model):
-    b2 = models.ForeignKey('app_b.B2')
-    c2 = models.ForeignKey('app_c.C2')
+class C(models.Model):
+    pass
 
-class A4(models.Model):
+
+class D(models.Model):
     pass

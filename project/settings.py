@@ -29,9 +29,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.contenttypes',
-    'app_tags',
-    'taggit',
+    'app_a',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -43,7 +41,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.admindocs.middleware.XViewMiddleware',
+    # 'django.contrib.admindocs.middleware.XViewMiddleware',
 )
 
 ROOT_URLCONF = 'project.urls'
@@ -56,19 +54,23 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': 'django',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'django',
+        #'USER': 'django',
+        #'PASSWORD': 'django',
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'django',
+        #'USER': 'django',
+        #'PASSWORD': 'django',
     }
 }
 
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
-LANGUAGE_CODE = 'de-de'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Berlin'
 
