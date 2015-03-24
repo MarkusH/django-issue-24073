@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = (
     'app_a',
+    'app_b',
 )
 
 MIDDLEWARE_CLASSES = (
