@@ -2,4 +2,4 @@ from django.db import models
 
 
 class MyModel(models.Model):
-    pass
+    a = models.ForeignKey('a.MyModel', null=True)
